@@ -1,7 +1,7 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
 import { Link, useParams } from 'react-router-dom';
-import { changeInfo } from '../../store/modules/charListSlice';
+import { changeInfo } from '../../store/modules/dramaSlice';
 
 const DramaCharItem = ({item}) => {
     const {id, imgurl, name, eng} = item;

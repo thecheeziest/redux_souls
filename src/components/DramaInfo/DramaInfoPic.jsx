@@ -1,9 +1,9 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { changeImage } from '../../store/modules/charListSlice';
+import { changeImage } from '../../store/modules/dramaSlice';
 
 const DramaInfoPic = () => {
-    const { charImg, charInfoData } = useSelector(state => state.charList);
+    const { charImg, charInfoData } = useSelector(state => state.drama);
     const {name, imgurl, pic, pic2} = charInfoData;
     const dispatch = useDispatch();
 

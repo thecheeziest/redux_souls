@@ -3,7 +3,7 @@ import styled from 'styled-components'
 // dramaWrap
 export const DramaWrap = styled.div`
 width: 100%;
-min-height: 125vh;
+min-height: 100vh;
 background: rgb(92,70,156);
 background: radial-gradient(circle, rgba(92,70,156,1) 0%, rgba(52,42,112,1) 51%, rgba(12,19,79,1) 100%);
 `
@@ -67,7 +67,9 @@ export const DramaHome = styled.div`
 // dramaInfo
 export const DramaInfo = styled.div`
 width: 1400px;
-margin: 20px auto;
+margin: auto;
+margin-top: 20px;
+padding-bottom: 100px;
 display: flex;
 justify-content: space-around;
 .left {
@@ -109,19 +111,21 @@ justify-content: space-around;
             height: 50px;
             margin: 30px 0;
             background: #5C469C;
-            font-size: 25px;
-            font-weight: 700;
             border-radius: 10px;
             text-align: center;
-            line-height: 50px;
-            color: #f6e2ff;
             text-shadow: 1px 4px 6px #5f2f8f;
             box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
             cursor: pointer;
+            a { font-size: 25px; font-weight: 700; line-height: 50px; color: #f6e2ff;}
             &.on {
                 background: #D4ADFC;
-                color: #0C134F;
                 text-shadow: 1px 2px 5px #757fd7;
+                a { color: #0C134F; }
+            }
+            &:hover {
+                background: #D4ADFC;
+                text-shadow: 1px 2px 5px #757fd7;
+                a { color: #0C134F; }
             }
         }
     }

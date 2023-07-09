@@ -2,7 +2,7 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 
 const DramaDetail1 = () => {
-    const {charInfoData} = useSelector(state => state.charList)
+    const {charInfoData} = useSelector(state => state.drama)
     const {name, eng, theme1, theme2, title1, title2, title3, title4} = charInfoData
     
     return (
