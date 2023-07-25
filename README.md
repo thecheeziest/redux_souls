@@ -3,9 +3,9 @@
 ## **사용된 기술 스택**
 - React
 - Redux
-- react-router-dom
+- React Router
 - axios
-- style-component  
+- styled-components
 ### **기본 코드 설명**
     1. 등장 인물 사진 클릭 시 인물에 알맞은 소개 페이지로 이동합니다.
     2. 소개 페이지의 왼쪽 영역에서 썸네일 이미지 클릭 시 대표 이미지가 변경됩니다.
