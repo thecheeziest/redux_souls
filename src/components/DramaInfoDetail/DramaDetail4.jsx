@@ -1,8 +1,4 @@
-import React from 'react';
-import { useSelector } from 'react-redux';
-
-const DramaDetail4 = () => {
-    const {charInfoData} = useSelector(state => state.drama)
+const DramaDetail4 = ({charInfoData}) => {
     const { link1, head1, cList1, linkM1, link2, head2, cList2, linkM2, link3, head3, cList3, linkM3 } = charInfoData;
 
     return (
